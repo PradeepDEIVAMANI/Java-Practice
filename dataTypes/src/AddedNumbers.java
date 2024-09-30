@@ -11,7 +11,9 @@ public class AddedNumbers {
 
         if (numbers < 0 || numbers > 1000) {
             System.out.println("Invalid input. Please enter an integer between 0 and 1000.");
-        } else {
+        }
+        else
+        {
             int sum = 0;
             int temp = numbers;
 
@@ -19,6 +21,7 @@ public class AddedNumbers {
             while (temp != 0) {
                 sum += temp % 10;  // Add the last digit to the sum
                 temp /= 10;
+
             }
             System.out.println("The sum of the digits of " + numbers + " is: " + sum);
         }
